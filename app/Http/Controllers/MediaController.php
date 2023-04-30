@@ -15,6 +15,13 @@ class MediaController extends Controller
         return view('cropImage');
     }
 
+    // views all medias
+    public function medias() : View
+    {
+        $medias = Media::get();
+        return view('medias', compact('medias'));
+    }
+
     // store media data
     public function store(Request $request): RedirectResponse
     {

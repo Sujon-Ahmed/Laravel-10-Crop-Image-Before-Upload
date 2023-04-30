@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel Crop Image Before Upload Example - ItSolutionStuff.com</title>
+    <title>Laravel Crop Image Before Upload Example</title>
     <meta name="_token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.css"/>
@@ -56,6 +56,8 @@
 
                     <br/><br>
                     <button class="btn btn-success">Submit</button>
+                    <br><br>
+                    <a class="btn btn-outline-info" href="{{ route('medias') }}">View Media Files</a>
                 </form>
             </div>
         </div>
@@ -65,8 +67,8 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel">Laravel Crop Image Before Upload Example - ItSolutionStuff.com</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="modalLabel">Laravel Crop Image Before Upload Example</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -83,7 +85,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-primary" id="crop">Crop</button>
                 </div>
             </div>

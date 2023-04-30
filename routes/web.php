@@ -18,5 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('crop-image-upload', [MediaController::class, 'index']);
+Route::get('crop-image-upload', [MediaController::class, 'index'])->name('crop-image-upload');
 Route::post('crop-image-upload', [MediaController::class, 'store'])->name('crop.image.upload.store');
+Route::get('/medias', [MediaController::class, 'medias'])->name('medias');
